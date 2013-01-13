@@ -32,17 +32,19 @@ This assumes that you have a working knowledge of Code Igniter.
 - Reactor works like any other CodeIgniter project. Once your project is set up, point your browser to <project url>/admin. The default login is "admin:admin". This is the base Reactor CMS.
 - The idea behind reactor is to set up a back-end CMS for your project as quickly as possible. As such, you begin by defining your database Model in Reactor rather than the database itself. You will find 2 sample models in the application/Models folder: name_model.php and address_model.php. Copy either of these files and rename to begin defining your project table.
 - Reactor models come with all of the basic CRUD functions written using CodeIgniter's Active Record class. Begin by editing the variables at the top of the file to suit your table structure.
+
 ::
-var $table = "tblPage";
-var $pk = "pageId";
-var $ds = "pageTimeStamp";  //Default sortby field 
-var $rq = "pageFbId";		//Required field (you'll need to mod the form validation if there isn't one)
-var $fields = array(
-	 'pageFbId' => array('label'=>'Facebook Id','type'=>'varchar','constraint'=>50),
-	 'pageUrl' => array('label'=>'Url','type'=>'varchar','constraint'=>200),
-	 'pageLanguageCode' => array('label'=>'Language','type'=>'varchar','constraint'=>10),
-	 'testId' => array('label'=>'Test','type'=>'int'),
-	);
+
+	var $table = "tblPage";
+	var $pk = "pageId";
+	var $ds = "pageTimeStamp";  //Default sortby field 
+	var $rq = "pageFbId";		//Required field (you'll need to mod the form validation if there isn't one)
+	var $fields = array(
+		 'pageFbId' => array('label'=>'Facebook Id','type'=>'varchar','constraint'=>50),
+		 'pageUrl' => array('label'=>'Url','type'=>'varchar','constraint'=>200),
+		 'pageLanguageCode' => array('label'=>'Language','type'=>'varchar','constraint'=>10),
+		 'testId' => array('label'=>'Test','type'=>'int'),
+		);
 	
 - All reactor tables assume a minimum of 3 fields: Id, TimeStamp, and one required field. All field names should be prefixed with the table name (the exception to this is join fields which have the same name as the id field of the table joined). This is not mandatory but is required for some CMS features.
 - Once you have edited the values at the top of the model file, return to the admin console in your browser. 
