@@ -29,6 +29,7 @@ Setup
 ************
 
 This assumes that you have a working knowledge of Code Igniter. 
+
 - Reactor works like any other CodeIgniter project. Once your project is set up, point your browser to <project url>/admin. The default login is "admin:admin". This is the base Reactor CMS.
 - The idea behind reactor is to set up a back-end CMS for your project as quickly as possible. As such, you begin by defining your database Model in Reactor rather than the database itself. You will find 2 sample models in the application/Models folder: name_model.php and address_model.php. Copy either of these files and rename to begin defining your project table.
 - Reactor models come with all of the basic CRUD functions written using CodeIgniter's Active Record class. Begin by editing the variables at the top of the file to suit your table structure.
