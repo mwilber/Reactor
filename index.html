@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Reactor : CMS starter project with CodeIgniter" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Reactor</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mwilber/Reactor">View on GitHub</a>
+
+          <h1 id="project_title">Reactor</h1>
+          <h2 id="project_tagline">CMS starter project with CodeIgniter</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mwilber/Reactor/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mwilber/Reactor/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Reactor is a php project boilerplate built with the Code Igniter framework. Reactor helps you create a back-end CMS quickly by automatically building a web interface for your database tables. 
+Reactor is meant to be the starting point for you Code Igniter projects and not to attach to existing projects.</p>
+
+<hr><p>Server Requirements</p>
+
+<hr><ul>
+<li> PHP version 5.2.4 or newer.</li>
+</ul><hr><p>Installation</p>
+
+<hr><p>Please see the <a href="http://codeigniter.com/user_guide/installation/index.html">installation section</a> of the CodeIgniter User Guide.</p>
+
+<hr><p>Setup</p>
+
+<hr><p>This assumes that you have a working knowledge of Code Igniter. </p>
+
+<ul>
+<li>Reactor works like any other CodeIgniter project. Once your project is set up, point your browser to /admin. The default login is "admin:admin". This is the base Reactor CMS.</li>
+<li>The idea behind reactor is to set up a back-end CMS for your project as quickly as possible. As such, you begin by defining your database Model in Reactor rather than the database itself. You will find 2 sample models in the application/Models folder: name_model.php and address_model.php. Copy either of these files and rename to begin defining your project table.</li>
+<li>Reactor models come with all of the basic CRUD functions written using CodeIgniter's Active Record class. Begin by editing the variables at the top of the file to suit your table structure.</li>
+<li>All reactor tables assume a minimum of 3 fields: Id, TimeStamp, and one required field. All field names should be prefixed with the table name (the exception to this is join fields which have the same name as the id field of the table joined). This is not mandatory but is required for some CMS features.</li>
+<li>Once you have edited the values at the top of the model file, return to the admin console in your browser. </li>
+<li>Click on the "Builder" tab. This will present you with a list of all models which do not yet have associated controllers. From the pulldown menu, select the model you just created and click the "Generate Scaffold" button.</li>
+<li>You should see a new tab with the same name as your model appear in the main navigation of the admin console. Reactor has automatically created your database table for you, as well as a controller and views to list, add, edit, and delete records in that table.</li>
+<li>Once your scaffold is generated, you are free to edit the controller and views as needed for your project. Please note that at this point any changes you make to the model must be manually done in the database.</li>
+<li>If you need to generate another clean scaffold, you must first delete the controller and view files associated with your model.</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Reactor maintained by <a href="https://github.com/mwilber">mwilber</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
